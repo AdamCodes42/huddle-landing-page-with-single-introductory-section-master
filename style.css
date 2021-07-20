@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root{
+--Violet:hsl(257, 40%, 49%);
+--Soft_Magenta: hsl(300, 69%, 71%);
+--white:#fff;
+}
+html{
+
+    height:100%;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    min-width:100%;
+    overflow: hidden;
+}
+body{
+    min-height:100vh;
+    background-color:var(--Violet);
+    background-image:url('./images/bg-desktop.svg');
+    background-repeat: no-repeat;
+}
+.logo{
+    padding:3rem 0rem 0rem 4rem;
+    width:14rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockup-img{
+    padding:5rem 0rem 0rem 6rem;
+    width:90%;
+}
+.text-section{
+    margin-right:2rem;
+    padding-left:2rem;
+}
+h1{
+    color:var(--white); 
+    width:30rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size:2.5rem;
+    position: relative;
+    top:-1em;
+    left:0em;
+}
+p{
+    color:var(--white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    margin-right:2rem;
+    position: relative;
+    top:-3em;
+}
+button{
+    position:relative;
+    top:-2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width:10rem;
+    border:1px solid #fff;  
+    border-radius:30px;
+    padding:10px;   
+    font-size: large;
+    font-weight:400;
+    color:hsl(257, 40%, 49%);
+    background-color:var(--white); 
+}
+button:hover{
+    cursor: pointer;
+    background-color:var(--Soft_Magenta);
+    color:var(--white);
+    border:1px solid var(--Soft_Magenta);  
+
+}
+.icons{
+    color:var(--white);
+    display: flex;
+    justify-content: flex-end ;
+    align-items:flex-end ;
+    margin-right: 2rem;
+}
+.icon{
+    border:1px solid #fff;
+    border-radius:50%;
+    padding:6px;
+    padding-left:8px;
+    width: 1em;
+    margin:0rem 0rem 0rem 0.7rem;
+    position: relative;
+    left:0rem;
+}
+.icon:hover{
+    cursor: pointer;
+    color:var(--Soft_Magenta);
+    border:1px solid var(--Soft_Magenta);  
+}
+footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:relative;
+    top:30px;
+}
+.attribution {
+     font-size: 11px;
+    text-align: center; 
+    position: relative;
+    bottom:0.7rem;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width:1200px){
+    body{
+        background-size:100%;
+    }
+    .mockup-img{
+        width:50%;
+    }
+}
+
+@media(max-width:1000px){
+        body{
+        background-size:cover;
+    }
+    main{
+        display: flex;
+        flex-direction:column;
+    }
+    .logo{
+        position: relative;
+        left:13.5rem;
+    }
+
+    .mockup-img{
+        width:50%;
+        position: relative;
+        top:-4rem;
+    }
+    .text-section{
+        position: relative;
+        bottom:5.5rem;
+        text-align: center;
+    }
+    h1{
+        font-size: larger;
+        padding:0px 0px 20px 100px;
+        width:50%;
+        min-width:
+    }
+    p{
+        font-size: medium;
+    }
+    button{
+        position: relative;
+        bottom:5rem;
+    }
+    .icons{
+        width:15%;
+        position:fixed;
+        bottom:4rem;
+        left:22rem;
+    }
+} 
+@media(max-width:512px){
+    .logo{
+        position: relative;
+        left:5rem;
+    }
+    .mockup-img{
+        position: relative;
+        left:-2rem;
+        width:70%;
+    }
+    h1{
+        position:relative;
+        left:-2rem;
+    }
+}
+@media(max-width:375px){
+ body{
+     overflow:scroll;
+     background-image:none;
+     background-image:url('./images/bg-mobile.svg');
+     background-size:100%;
+ }
+ main{
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    .logo{
+        width:40%;
+        position: relative;
+        left:-3rem;
+        bottom:1rem;
+    }
+ .mockup-img{
+     width:80%;
+     position:relative;
+     top:-2.8rem;
+     left:-2.8rem;     
+    }
+    h1{
+        font-size:1.5rem;
+        text-align: center;
+        width:90%;
+        position: relative;
+        top:4rem;
+        left:-4rem;
+
+}
+p{
+    font-size:medium ;
+    font-weight:lighter;
+    text-align: center;
+    width:19rem;
+    position:relative;
+    top:2rem;
+    left:2rem;
+ }
+ button{
+     position:relative;
+     top:2rem;
+     left:1rem;
+     padding:5px;
+     font-size: small;
+ }
+ .icons{
+     position: relative;
+     bottom:4rem;
+     left:12.5rem;
+
+ }
+}                                                               
